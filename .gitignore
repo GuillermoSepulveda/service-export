@@ -1,0 +1,59 @@
+# Operating System Files
+*.sw?
+.#*
+*#
+*~
+
+*.DS_Store
+Thumbs.db
+
+# Build Files #
+
+bin
+target
+build/
+/scratch
+.gradle
+.sonar/
+LOG_PATH_IS_UNDEFINED/
+
+# Eclipse Project Files #
+
+.classpath
+.project
+.settings
+
+# IntelliJ IDEA Files #
+
+*.iml
+*.ipr
+*.iws
+*.idea
+
+# Test files
+
+*-uploaded
+
+dependency-reduced-pom.xml
+README.html
+
+# Maven
+log/
+target/
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# Node Modules
+node_modules/
+.springBeans
+.cache-tests
+.cache-main
