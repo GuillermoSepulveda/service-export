@@ -1,10 +1,10 @@
-package cl.ingemet.microservice.export.conf
+package cl.ingemet.microservice.orden_compra.conf
 
 import akka.http.scaladsl.model.HttpMethods._
 import akka.http.scaladsl.model.HttpResponse
 import akka.http.scaladsl.model.headers.{`Access-Control-Allow-Credentials`, `Access-Control-Allow-Headers`, `Access-Control-Allow-Methods`, `Access-Control-Allow-Origin`}
-import akka.http.scaladsl.server.Directives.{complete, mapResponseHeaders, options}
-import akka.http.scaladsl.server.{Directive0, Route}
+import akka.http.scaladsl.server.Directives._
+import akka.http.scaladsl.server._
 
 /**
   * Created by PC-Morgoroth on 03-12-2016.

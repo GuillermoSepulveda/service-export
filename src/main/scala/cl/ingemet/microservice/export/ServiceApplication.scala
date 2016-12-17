@@ -4,9 +4,10 @@ import akka.actor.ActorSystem
 import akka.http.scaladsl.Http
 import akka.http.scaladsl.server.RouteConcatenation
 import akka.stream.ActorMaterializer
-import cl.ingemet.microservice.export.conf.{Base, CorsSupport}
+import cl.ingemet.microservice.export.conf.Base
 import cl.ingemet.microservice.export.conf.swagger.{SwaggerDocService, SwaggerUIEdnpoint}
 import cl.ingemet.microservice.export.endpoint.ApiEndpoint
+import cl.ingemet.microservice.orden_compra.conf.CorsSupport
 
 /**
   * Created by PC-Morgoroth on 07-12-2016.
@@ -18,7 +19,7 @@ object ServiceApplication extends App with RouteConcatenation with SwaggerUIEdnp
   implicit val actorMaterializer = ActorMaterializer()
 
   val routes =
-//    corsHandler(new ApiEndpoint().route) ~
+    corsHandler(new ApiEndpoint().route) ~
     swaggerUiRoute ~
     new SwaggerDocService().routes
 

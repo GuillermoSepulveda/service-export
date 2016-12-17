@@ -5,6 +5,7 @@ import java.net.InetAddress
 import akka.actor.ActorSystem
 import akka.stream.ActorMaterializer
 import cl.ingemet.microservice.export.conf.Base
+import cl.ingemet.microservice.export.endpoint.ApiEndpoint
 import com.github.swagger.akka._
 import com.github.swagger.akka.model.Info
 import io.swagger.models.ExternalDocs
